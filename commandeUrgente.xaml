@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1234,798</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>850.4,804</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>commandeUrgente_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -93,19 +93,19 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="commandeUrgente" sap:VirtualizedContainerService.HintSize="450,733" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="commandeUrgente" sap:VirtualizedContainerService.HintSize="449.6,739.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Alerte urgence dans la sortie" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Warn]" Message="[&quot;Le stock de  &quot;+in_articleCommande +&quot; est presque vide! Commande ugente passée à &quot;+ in_nomDestinataireMail +&quot;.&quot;]" />
-    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" Subject="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Bonjour &quot;+ in_destinataireMail+&quot;,&#xD;&#xA;Nous vous passons une commande urgente pour 5000 &quot; + in_articleCommande+&quot;.&#xD;&#xA;Merci d'avance,&#xD;&#xA;Cordialement,&#xD;&#xA;Nutristore.&quot;]" DisplayName="Mail commande urgente fournisseur" Email="daylof05@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="388,208" sap2010:WorkflowViewState.IdRef="SendMail_3" IgnoreCRL="False" IsBodyHtml="False" Password="[in_passwordSMTP]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" To="[in_destinataireMail]">
+    <ui:LogMessage DisplayName="Alerte urgence dans la sortie" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Warn]" Message="[&quot;Le stock de  &quot;+in_articleCommande +&quot; est presque vide! Commande ugente passée à &quot;+ in_nomDestinataireMail +&quot;.&quot;]" />
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Bonjour &quot;+ in_nomDestinataireMail+&quot;,&#xD;&#xA;Nous vous passons une commande urgente pour 5000 &quot; + in_articleCommande+&quot;.&#xD;&#xA;Merci d'avance,&#xD;&#xA;Cordialement,&#xD;&#xA;Nutristore.&quot;]" DisplayName="Mail commande urgente fournisseur" Email="daylof05@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="387.2,210.4" sap2010:WorkflowViewState.IdRef="SendMail_3" IgnoreCRL="False" IsBodyHtml="False" Password="[in_passwordSMTP]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Commande urgente" To="[in_destinataireMail]">
       <ui:SendMail.Files>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
       </ui:SendMail.Files>
     </ui:SendMail>
-    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" Subject="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Bonjour,&#xD;&#xA;Une commande urgente a été passée pour 5000 &quot; + in_articleCommande+&quot; auprès de &quot;+in_nomDestinataireMail+&quot;.&#xD;&#xA;Cordialement,&#xD;&#xA;Nutristore.&quot;]" DisplayName="Mail commande urgente Nutristore" Email="daylof05@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Password="[in_passwordSMTP]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" To="[in_mailNutristore]">
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Bonjour,&#xA;Une commande urgente a été passée pour 5000 &quot; + in_articleCommande+&quot; auprès de &quot;+in_nomDestinataireMail+&quot;.&#xA;Cordialement,&#xA;Nutristore.&quot;]" DisplayName="Mail commande urgente Nutristore" Email="daylof05@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="387.2,194.4" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Password="[in_passwordSMTP]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Commande urgente" To="[in_mailNutristore]">
       <ui:SendMail.Files>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
       </ui:SendMail.Files>
